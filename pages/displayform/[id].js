@@ -12,7 +12,7 @@ function displayform({ id }) {
 	}, []);
 	console.log(data);
 	const onSubmit = async (datas) => {
-		const res = await fetch(`http://localhost:3000/api/submitform/${id}`, {
+		const res = await fetch(`https://form-projet-finale.vercel.app/api/submitform/${id}`, {
 			method: "POST",
 			headers: {
 				"Content-type": "application/json; charset=UTF-8",
